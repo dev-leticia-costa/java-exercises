@@ -1,4 +1,4 @@
-package org.example;
+package org.example.estruturaRepeticao.loops;
 
 //~~EXERCÍCIO 1~~
 //Faça um programa que leia conjuntos de dois valores,
