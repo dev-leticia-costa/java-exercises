@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-public class exercicio1 {
+public class exerciciosList {
     public static void main(String[] args) {
 
 
@@ -69,7 +69,22 @@ public class exercicio1 {
 
         System.out.println("Remova as notas menores que 7 e exiba a lista: ");
 
-        
+        Iterator<Double> iterator1 = notas.iterator();
+        while (iterator1.hasNext()) {//hasNext -> existe um item próximo, itera todos os itens
+            Double next = iterator1.next();
+            if (next < 7) iterator1.remove();
+
+        }
+        System.out.println(notas);
+
+        //deletar toda a lista
+        System.out.println("Apagar lista");
+        notas.clear();
+
+        //ver se lista está vazia
+        System.out.println("Essa lista está vazia? " + notas.isEmpty());
+
+
     }
 
 
